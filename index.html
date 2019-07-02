@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>beautifull email form in javascript...</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container-fluid bg">
+        <div class="row justify-content-center no-gutters">
+            <div class="col-8 mt-3 form-card">
+                <div id="content" class="bg-white">
+                    <header id="header" class="bg-danger text-light font-weight-light text-center p-2">
+                        Send New Email
+                    </header>
+                    <form id="email-form" action="#" class="col-12">
+                        <div class="row">
+                                <div class="col-12 form-group">
+                                    <label for="email" class="form-label">To:</label>
+                                    <input id="email" type="email" class="form-control">
+                                </div>
+                                <div class="col-12 form-group">
+                                        <label for="subject" class="form-label">Subject:</label>
+                                        <input id="subject" type="text" class="form-control">
+                                </div>
+                        </div>
+
+                            <div class="row">
+                                <div class="col-12 form-group">
+                                    <label for="message" class="form-label">Mesage</label>
+                                    <textarea id="message" class="form-control" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="row justify-content-center" id="loaders">
+                                <img src="img/spinner.gif" id="spinner" class="" width="100px">
+                            </div>
+                            <br/>
+                            <div class="row justify-content-around">
+                                    <div class="col-3 d-flex">
+                                        <button id="sendBtn" class="btn btn-info btn-block" type="submit" name="action">Send
+                                        </button>
+                                    </div>
+                                    <div class="col-3 d-flex">
+                                        <button id="resetBtn" class="btn btn-danger btn-block" type="reset">Reset
+                                        </button>
+                                    </div>
+                            </div>
+                        <br/>
+                    </form> 
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="script/script.js"></script>
+</body>
+</html>
